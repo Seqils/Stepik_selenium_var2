@@ -3,6 +3,7 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 
 
+
 def pytest_addoption(parser):  # задаём парсер, который будет считывать в КС язык с помощью параметра --language=
     parser.addoption('--language', action='store', default='en',
                      help="Choose browser language...")
