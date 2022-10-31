@@ -1,7 +1,5 @@
 from .base_page import BasePage
 from .locators import LoginPageLocators
-import time
-from selenium import webdriver
 
 
 class LoginPage(BasePage):
