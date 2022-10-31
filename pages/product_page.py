@@ -20,6 +20,13 @@ class ProductPage(BasePage):
         assert self.browser.find_element(*ProductPageLocators.BOOK_NAME).text == \
                self.browser.find_element(*ProductPageLocators.BOOK_NAME_IN_ALERT).text, "Prices not the same"
 
+    def should_not_be_success_message(self):
+        assert self.is_disappeared(*ProductPageLocators.SUCCESS_MESSAGE), "Success massage is presented, " \
+                                                                               "but should not be"
+
+
+
+
     # def checking_result(self):
     # try:
     # assert self.browser.find_element(*ProductPageLocators.BOOK_PRICE).text == \
