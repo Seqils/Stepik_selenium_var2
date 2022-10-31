@@ -15,4 +15,3 @@ class BasketPage(BasePage):
     def should_be_an_item_in_basket(self):
         assert self.is_element_present(*BasePageLocators.BASKET_ITEMS), \
             "There are no items in basket, should be at least one"
-
