@@ -37,14 +37,6 @@ def test_guest_can_add_product_to_basket(browser):
 
 
 @pytest.mark.need_review
-def test_guest_cant_see_success_message(browser):
-    link = PRODUCT_PAGE_LINK
-    page = ProductPage(browser, link)
-    page.open()
-    page.should_not_be_success_message()
-
-
-@pytest.mark.need_review
 def test_guest_cant_see_product_in_basket_opened_from_product_page(browser):
     link = PRODUCT_PAGE_LINK
     page = ProductPage(browser, link)
